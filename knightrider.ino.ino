@@ -1,18 +1,14 @@
-int i;
-int led[]={2,3,4,5,6,7,8};
+int pinArray[]={2,3,4,5,6};
+int count = 0
 
 void setup() {
- for(i=0;i<8;i++)
- {pinMode(led[i],OUTPUT);}
+ for(counr=0;count<7;count++)
+ {pinMode(pinArray[count],OUTPUT);}
 }
 void loop() {
-  for(i=0;i<8;i++)
-  {digitalWrite(led[i],HIGH);
+  for(count=2;count<7;count++){
+   digitalWrite(count,HIGH);
   delay(100);
-  digitalWrite(led[i],LOW);}
-  for(i=8;i>=0;i--)
-  {digitalWrite(led[i],HIGH);
-  delay(200);
-  digitalWrite(led[i],LOW);
+  digitalWrite(count,LOW);
 }
 }
